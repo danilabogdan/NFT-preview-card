@@ -1,4 +1,15 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600&display=swap');
+
+:root {
+    --clr-primary-soft-blue:hsl(215, 51%, 70%);
+    --clr-primary-cyan:hsl(178, 100%, 50%);
+
+    --clr-dark-blue-bg:hsl(217, 54%, 11%);
+    --clr-dark-blue-card:hsl(216, 50%, 16%);
+    --clr-dark-blue-line:hsl(215, 32%, 27%);
+    --clr-white:hsl(0, 0%, 100%);
+}
 /* https://piccalil.li/blog/a-modern-css-reset*/
 
 /* Box sizing rules */
@@ -38,6 +49,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-size: 1.125rem;
 }
 
 /* A elements that don't have a class get default styles */
@@ -74,4 +86,98 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+body {
+    background-color: var(--clr-dark-blue-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+}
+
+.card {
+    background-color: var(--clr-dark-blue-card);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 21.875rem;
+    height: 37.5rem;
+    border-radius: 10px;
+}
+
+.eth-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+
+h2 {
+    color: var(--clr-white);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 25px;
+    align-self: flex-start;
+}
+
+.info {
+    color: var(--clr-primary-soft-blue);
+    font-weight: 200;
+    padding-left: 25px;
+    align-self: flex-start;
+    line-height: 1.4;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    width: 300px;
+    /* padding-top: 20px; */
+}
+
+
+.price > span {
+    color: var(--clr-primary-cyan);
+    align-self: flex-start;
+    /* padding-left: 10px; */
+    /* padding-right: 25px; */
+    font-size: 16px;
+}
+
+
+
+.days {
+    /* padding-right: 25px; */
+    color: var(--clr-primary-soft-blue);
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--clr-primary-soft-blue);
+    font-weight: 200;
+    font-size: 15px;
+    padding-top: 25px;
+}
+
+.author > span {
+    color: var(--clr-white);
+    font-weight: 200;
+    padding-left: 5px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
 }
